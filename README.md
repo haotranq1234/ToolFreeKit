@@ -8,7 +8,7 @@ A production-ready foundation for a fast, SEO-focused directory of free online t
 - React 19
 - TypeScript
 - Tailwind CSS
-- Static export for Cloudflare Pages
+- Cloudflare OpenNext adapter
 - ESLint and Prettier
 
 ## Commands
@@ -28,27 +28,28 @@ npm run build
 
 ## Deployment
 
-This project is configured as a static Next.js export for Cloudflare Pages.
-It does not need OpenNext or `@cloudflare/next-on-pages` unless we later add
-server-side rendering or Pages Functions.
+This project uses the Cloudflare OpenNext adapter for Next.js 15. The
+`wrangler.jsonc` and `open-next.config.ts` files are part of the production
+deployment configuration.
 
-Cloudflare Pages settings:
-
-- Framework preset: `Next.js (Static HTML Export)`
-- Build command: `npx next build`
-- Output directory: `out`
-
-If the Pages log shows `npx opennextjs-cloudflare build`, the project is
-attached to the wrong preset. Switch it to `Next.js (Static HTML Export)`.
-
-Cloudflare Pages build command:
+Cloudflare build command:
 
 ```bash
 npm run build
 ```
 
-Output directory:
+Cloudflare output:
 
 ```bash
-out
+.open-next/assets
+```
+
+On Windows, `npm run build` runs `next build` for local verification because
+OpenNext warns that Windows support is unreliable. In Cloudflare's Linux build
+environment, the same command runs `opennextjs-cloudflare build`.
+
+Deploy from a machine with Cloudflare credentials:
+
+```bash
+npm run deploy
 ```
