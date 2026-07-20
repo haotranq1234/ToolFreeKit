@@ -28,6 +28,16 @@ npm run build
 
 ## Deployment
 
+This project is configured as a static Next.js export for Cloudflare Pages.
+It does not need OpenNext or `@cloudflare/next-on-pages` unless we later add
+server-side rendering or Pages Functions.
+
+Cloudflare Pages settings:
+
+- Framework preset: `Next.js (Static HTML Export)`
+- Build command: `npx next build`
+- Output directory: `out`
+
 Cloudflare Pages build command:
 
 ```bash
