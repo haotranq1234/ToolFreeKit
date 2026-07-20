@@ -38,6 +38,9 @@ Cloudflare Pages settings:
 - Build command: `npx next build`
 - Output directory: `out`
 
+If the Pages log shows `npx opennextjs-cloudflare build`, the project is
+attached to the wrong preset. Switch it to `Next.js (Static HTML Export)`.
+
 Cloudflare Pages build command:
 
 ```bash
