@@ -4,7 +4,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   title: "Search Tools",
-  description: "Search ToolWeb's free online calculators, converters, and utilities.",
+  description: "Search ToolFreeKit's free online calculators, converters, and utilities.",
   path: "/search/"
 });
 

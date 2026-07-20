@@ -2,7 +2,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   title: "Privacy Policy",
-  description: "Read the ToolWeb privacy policy.",
+  description: "Read the ToolFreeKit privacy policy.",
   path: "/privacy/"
 });
 
@@ -12,7 +12,7 @@ export default function PrivacyPage() {
       <h1 className="text-4xl font-semibold text-ink">Privacy Policy</h1>
       <div className="mt-6 space-y-5 leading-7 text-muted">
         <p>
-          ToolWeb is designed around lightweight browser-based tools. We aim to
+          ToolFreeKit is designed around lightweight browser-based tools. We aim to
           collect only what is necessary to operate, secure, and improve the
           website.
         </p>

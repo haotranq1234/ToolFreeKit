@@ -2,7 +2,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   title: "Terms of Use",
-  description: "Read the ToolWeb terms of use.",
+  description: "Read the ToolFreeKit terms of use.",
   path: "/terms/"
 });
 
@@ -12,7 +12,7 @@ export default function TermsPage() {
       <h1 className="text-4xl font-semibold text-ink">Terms of Use</h1>
       <div className="mt-6 space-y-5 leading-7 text-muted">
         <p>
-          ToolWeb provides free online tools for general informational and
+          ToolFreeKit provides free online tools for general informational and
           productivity purposes. Results should be reviewed before relying on
           them for important decisions.
         </p>

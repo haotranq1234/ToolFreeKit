@@ -3,7 +3,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata = createMetadata({
   title: "Contact",
-  description: "Contact ToolWeb with feedback, corrections, or partnership ideas.",
+  description: "Contact ToolFreeKit with feedback, corrections, or partnership ideas.",
   path: "/contact/"
 });
 
