@@ -41,7 +41,7 @@ npm run build
 Cloudflare deploy command:
 
 ```bash
-npx wrangler deploy
+npm run deploy
 ```
 
 Cloudflare output:
@@ -52,4 +52,9 @@ Cloudflare output:
 
 On Windows, `npm run build` runs `next build` for local verification because
 OpenNext warns that Windows support is unreliable. In Cloudflare's Linux build
-environment, the same command runs `opennextjs-cloudflare build`.
+environment, `npm run deploy` runs `opennextjs-cloudflare build &&
+opennextjs-cloudflare deploy`.
+
+If the Workers Builds log shows `Executing user deploy command: npx wrangler deploy`,
+change the deploy command to `npm run deploy` so the compiled OpenNext config
+is created before deployment.
