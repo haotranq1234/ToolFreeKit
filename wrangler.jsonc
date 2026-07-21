@@ -3,6 +3,9 @@
   "name": "toolfreekit",
   "compatibility_date": "2026-07-20",
   "compatibility_flags": ["nodejs_compat"],
+  "build": {
+    "command": "npm run build"
+  },
   "main": ".open-next/worker.js",
   "assets": {
     "directory": ".open-next/assets",

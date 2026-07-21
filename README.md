@@ -32,10 +32,16 @@ This project uses the Cloudflare OpenNext adapter for Next.js 15. The
 `wrangler.jsonc` and `open-next.config.ts` files are part of the production
 deployment configuration.
 
-Cloudflare build command:
+Cloudflare Workers Build command:
 
 ```bash
 npm run build
+```
+
+Cloudflare deploy command:
+
+```bash
+npx wrangler deploy
 ```
 
 Cloudflare output:
@@ -47,9 +53,3 @@ Cloudflare output:
 On Windows, `npm run build` runs `next build` for local verification because
 OpenNext warns that Windows support is unreliable. In Cloudflare's Linux build
 environment, the same command runs `opennextjs-cloudflare build`.
-
-Deploy from a machine with Cloudflare credentials:
-
-```bash
-npm run deploy
-```
